@@ -10,7 +10,7 @@ call pathogen#infect()
 filetype plugin indent on
 
 " Platform (Windows, Mac, etc.) configuration.
-"source ~/.vim/platforms.vim
+source ~/.vim/platforms.vim
 
 " All of the Vim configuration.
 source ~/.vim/config.vim
