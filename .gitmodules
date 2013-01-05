@@ -10,3 +10,6 @@
 [submodule "bundle-available/vim-surround"]
 	path = bundle-available/vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "bundle-available/nginx.vim"]
+	path = bundle-available/nginx.vim
+	url = https://github.com/mutewinter/nginx.vim
