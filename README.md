@@ -12,3 +12,20 @@ Install this configuration:
     cd ~/.vim
     git submodule init
     git submodule update
+
+## Plugins Bundle
+
+All plugins installed in bundle-available directory using git submodule. To 
+activate the plugins, create symlink from bundle-available to directory bundle.
+
+For deactivating vim plugins, remove symlink from directory bundle.
+
+Examples,
+
+To de-activate plugin vim-powerline,
+
+    rm bundle/vim-powerline
+
+To re-activate plugin vim-powerline,
+
+    ln -s bundle-available/vim-powerline bundle/vim-powerline
