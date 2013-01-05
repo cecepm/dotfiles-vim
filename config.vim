@@ -2,6 +2,7 @@
 " Regular Vim Configuration (No Plugins Needed)
 " ---------------------------------------------
 
+
 " ---------------
 " Color
 " ---------------
@@ -31,6 +32,7 @@ if exists('+ballooneval')
   set balloondelay=100000
 endif
 
+
 " ---------------
 " Behaviors
 " ---------------
@@ -50,6 +52,7 @@ set iskeyword+=$,@     " Add extra characters that are valid parts of variables
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=3        " Keep three lines below the last line when scrolling
 
+
 " ---------------
 " Text Format
 " ---------------
@@ -61,6 +64,7 @@ set autoindent
 set smarttab
 set expandtab
 
+
 " ---------------
 " Searching
 " ---------------
@@ -70,6 +74,7 @@ set incsearch
 set hlsearch
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
   \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
+
 
 " ---------------
 " Visual
@@ -95,12 +100,14 @@ set listchars+=extends:>
 " continues beyond the right of the screen
 set listchars+=precedes:<
 
+
 " ---------------
 " Sounds
 " ---------------
 set noerrorbells
 set novisualbell
 set t_vb=
+
 
 " ---------------
 " Mouse
