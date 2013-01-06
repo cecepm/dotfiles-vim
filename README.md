@@ -13,6 +13,12 @@ Install this configuration:
     git submodule init
     git submodule update
 
+## Updating
+
+    git pull
+    git submodule init
+    git submodule update
+
 ## Disable Plugins
 
 Disabling vim plugins is easy, just remove symlink from directory bundle.
