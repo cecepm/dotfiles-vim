@@ -7,7 +7,7 @@
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
+colorscheme distinguished
 
 
 " ---------------
