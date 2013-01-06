@@ -25,4 +25,5 @@ disable plugin vim-powerline,
 
 re-enable plugin vim-powerline,
 
-    ln -s bundle-available/vim-powerline bundle/vim-powerline
+    cd bundle
+    ln -s ../bundle-available/vim-powerline vim-powerline
