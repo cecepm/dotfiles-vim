@@ -13,3 +13,6 @@
 [submodule "bundle-available/nginx.vim"]
 	path = bundle-available/nginx.vim
 	url = https://github.com/mutewinter/nginx.vim
+[submodule "bundle-available/vim-easymotion"]
+	path = bundle-available/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion
