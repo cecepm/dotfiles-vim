@@ -19,7 +19,19 @@ Install this configuration:
     git submodule init
     git submodule update
 
-## Disable Plugins
+## Plugins
+
+### Installation
+
+Command-T Plugins
+
+    cd bundle-available
+    ruby extconf.rb
+    make
+
+Detailed installation instructions are available at [Command-t homepage](https://wincent.com/products/command-t).
+
+### Disable Plugins
 
 Disabling vim plugins is easy, just remove symlink from directory bundle.
 

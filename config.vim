@@ -66,6 +66,7 @@ set expandtab
 " Toggle paste mode (temporary disable autoindent when copy paste)
 set pastetoggle=<F2>
 
+
 " ---------------
 " Searching
 " ---------------
