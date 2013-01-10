@@ -29,7 +29,7 @@ Command-T Plugins
     ruby extconf.rb
     make
 
-Detailed installation instructions are available at [Command-t homepage](https://wincent.com/products/command-t).
+Detailed installation instructions are available at [Command-T homepage](https://wincent.com/products/command-t).
 
 ### Disable Plugins
 
