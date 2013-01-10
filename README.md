@@ -25,7 +25,7 @@ Install this configuration:
 
 Command-T Plugins
 
-    cd bundle-available/command-t
+    cd bundle-available/command-t/ruby/command-t
     ruby extconf.rb
     make
 
