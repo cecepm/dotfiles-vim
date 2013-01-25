@@ -28,3 +28,6 @@
 [submodule "bundle-available/bind.vim"]
 	path = bundle-available/bind.vim
 	url = https://github.com/seveas/bind.vim
+[submodule "bundle-available/vim-markdown"]
+	path = bundle-available/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
