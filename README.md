@@ -23,6 +23,11 @@ Install this configuration:
 
 ### Installation
 
+Create symlink from folder bundle-available to folder bundle
+
+    cd bundle
+    ln -s ../bundle-available/* .
+
 Command-T Plugins
 
     cd bundle-available/command-t/ruby/command-t
