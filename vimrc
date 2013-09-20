@@ -37,6 +37,7 @@ Bundle 'bling/vim-airline'
 
 " Colorschemes
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'w0ng/vim-hybrid'
 
 " Automatic closing of quotes
 Bundle 'Raimondi/delimitMate'
@@ -64,7 +65,8 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties
+colorscheme hybrid
 
 " User Interface
 set number              " Line numbers on

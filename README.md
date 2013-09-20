@@ -3,7 +3,7 @@
 1. Clone repository
 
     ```
-    git clone https://github.com/cecepm/dotfiles-vim .vim
+    git clone https://github.com/cecepm/dotfiles-vim ~/.vim
     ```
 
 2. Link vimrc
