@@ -23,14 +23,20 @@ Bundle 'mutewinter/nginx.vim'
 " Syntax and plugin for Bind
 Bundle 'seveas/bind.vim'
 
+" Easy comment/uncomment
+Bundle 'tpope/vim-commentary'
+
+" Git wrapper for Vim
+Bundle 'tpope/vim-fugitive'
+
+" Syntax, indent, and filetype plugin files for git
+Bundle 'tpope/vim-git'
+
 " Syntax and plugin for Markdown
 Bundle 'tpope/vim-markdown'
 
 " All about surrounding
 Bundle 'tpope/vim-surround'
-
-" Easy comment/uncomment
-Bundle 'tpope/vim-commentary'
 
 " Nice VIM status line
 Bundle 'bling/vim-airline'
