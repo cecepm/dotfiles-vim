@@ -83,7 +83,9 @@ set cursorline          " Highlight current line
 set laststatus=2        " Always show status line
 
 " Set highlight at column 81 and 121-999
-let &colorcolumn="81,".join(range(121,999),",")
+if v:version >= 703
+    let &colorcolumn="81,".join(range(121,999),",")
+endif
 
 " Text Formatting
 set backspace=2         " Delete everything with backspace
