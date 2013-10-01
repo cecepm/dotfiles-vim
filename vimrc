@@ -80,7 +80,7 @@ set nowrap              " Line wrapping off
 set cmdheight=2         " Make the command area two lines high
 set scrolloff=3         " Scroll when the cursor is 3 lines from edge
 set cursorline          " Highlight current line
-set laststatus=2        " Always show status line
+
 
 " Set highlight at column 81 and 121-999
 if v:version >= 703
@@ -122,7 +122,10 @@ au BufRead,BufNewFile /opt/nginx/conf/sites-available/* set ft=nginx
 au BufRead,BufNewFile /opt/nginx/conf/sites-enabled/* set ft=nginx
 
 
-" Powerline Symbols
+" Powerline
+set laststatus=2        " Always show status line
+set noshowmode          " Hide the default mode text
+                        " (e.g. -- INSERT -- below the statusline)
 let g:airline_powerline_fonts = 1
 
 
