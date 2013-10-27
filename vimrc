@@ -17,6 +17,12 @@ Bundle 'gmarik/vundle'
 " Show trailing whitespaces
 Bundle 'bronson/vim-trailing-whitespace'
 
+" Easy tabular formatting
+Bundle 'godlygeek/tabular'
+
+" Python Mode
+Bundle 'klen/python-mode.git'
+
 " Syntax and plugin for Nginx
 Bundle 'mutewinter/nginx.vim'
 
@@ -127,6 +133,9 @@ set laststatus=2        " Always show status line
 set noshowmode          " Hide the default mode text
                         " (e.g. -- INSERT -- below the statusline)
 let g:airline_powerline_fonts = 1
+
+" Python Mode
+let g:pymode_folding = 0
 
 
 " ------------------------------------------------------------------------------
