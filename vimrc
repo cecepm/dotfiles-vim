@@ -134,8 +134,20 @@ set noshowmode          " Hide the default mode text
                         " (e.g. -- INSERT -- below the statusline)
 let g:airline_powerline_fonts = 1
 
+" make Esc happen without waiting for timeoutlen
+" fixes Powerline delay
+augroup FastEscape
+  autocmd!
+  au InsertEnter * set timeoutlen=0
+  au InsertLeave * set timeoutlen=1000
+augroup END
+
+
 " Python Mode
 let g:pymode_folding = 0
+
+" Load pylint code plugin
+let g:pymode_lint = 0
 
 
 " ------------------------------------------------------------------------------
