@@ -20,9 +20,6 @@ Bundle 'bronson/vim-trailing-whitespace'
 " Easy tabular formatting
 Bundle 'godlygeek/tabular'
 
-" Python Mode
-Bundle 'klen/python-mode.git'
-
 " Syntax and plugin for Nginx
 Bundle 'mutewinter/nginx.vim'
 
@@ -141,13 +138,6 @@ augroup FastEscape
   au InsertEnter * set timeoutlen=0
   au InsertLeave * set timeoutlen=1000
 augroup END
-
-
-" Python Mode
-let g:pymode_folding = 0
-
-" Load pylint code plugin
-let g:pymode_lint = 0
 
 
 " ------------------------------------------------------------------------------
