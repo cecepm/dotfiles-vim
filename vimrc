@@ -123,7 +123,8 @@ set mouse=a             " Mouse in all modes
 au BufRead,BufNewFile /opt/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 au BufRead,BufNewFile /opt/nginx/conf/sites-available/* set ft=nginx
 au BufRead,BufNewFile /opt/nginx/conf/sites-enabled/* set ft=nginx
-
+au BufRead,BufNewFile /etc/nginx/sites-available/* set ft=nginx
+au BufRead,BufNewFile /etc/nginx/sites-enabled/* set ft=nginx
 
 " Powerline
 set laststatus=2        " Always show status line
