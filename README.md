@@ -21,3 +21,7 @@
 4. Install configured bundle
 
     Launch `vim`, and run `:BundleInstall` (or `vim +BundleInstall +qall` for CLI lovers)
+
+## Screenshot
+
+![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim.png)
