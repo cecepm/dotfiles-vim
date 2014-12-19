@@ -74,8 +74,7 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 set background=dark
-"colorscheme Tomorrow-Night-Eighties
-colorscheme hybrid
+colorscheme Tomorrow-Night-Eighties
 
 " User Interface
 set number              " Line numbers on
@@ -130,7 +129,7 @@ au BufRead,BufNewFile /etc/nginx/sites-enabled/* set ft=nginx
 set laststatus=2        " Always show status line
 set noshowmode          " Hide the default mode text
                         " (e.g. -- INSERT -- below the statusline)
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " make Esc happen without waiting for timeoutlen
 " fixes Powerline delay
