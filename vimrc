@@ -47,6 +47,7 @@ Bundle 'bling/vim-airline'
 " Colorschemes
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'tomasr/molokai'
 
 " Automatic closing of quotes
 Bundle 'Raimondi/delimitMate'
@@ -74,14 +75,21 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties
+
+let g:molokai_original = 0
+colorscheme molokai
 
 " User Interface
 set number              " Line numbers on
-set nowrap              " Line wrapping off
 set cmdheight=2         " Make the command area two lines high
 set scrolloff=3         " Scroll when the cursor is 3 lines from edge
 set cursorline          " Highlight current line
+set wrap                " Line wrapping on
+set linebreak           " Wrap lines on 'word' boundaries"
+if exists('&breakindent')
+    set breakindent     " Indent wrapped lines up to the same level
+endif"
 
 
 " Set highlight at column 81 and 121-999
