@@ -35,6 +35,9 @@ Bundle 'tpope/vim-fugitive'
 " Syntax, indent, and filetype plugin files for git
 Bundle 'tpope/vim-git'
 
+" Git-Gutter
+Bundle 'airblade/vim-gitgutter'
+
 " Syntax and plugin for Markdown
 Bundle 'tpope/vim-markdown'
 
@@ -85,6 +88,8 @@ set number              " Line numbers on
 set cmdheight=2         " Make the command area two lines high
 set scrolloff=3         " Scroll when the cursor is 3 lines from edge
 set cursorline          " Highlight current line
+
+" Text Wrap
 set wrap                " Line wrapping on
 set linebreak           " Wrap lines on 'word' boundaries"
 if exists('&breakindent')
@@ -94,7 +99,8 @@ endif"
 
 " Set highlight at column 81 and 121-999
 if v:version >= 703
-    let &colorcolumn="81,".join(range(121,999),",")
+    "let &colorcolumn="81,".join(range(121,999),",")
+    set colorcolumn=81
 endif
 
 " Text Formatting
