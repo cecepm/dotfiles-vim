@@ -48,9 +48,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'bling/vim-airline'
 
 " Colorschemes
-Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'tomasr/molokai'
+Bundle 'flazz/vim-colorschemes'
 
 " Automatic closing of quotes
 Bundle 'Raimondi/delimitMate'
@@ -78,9 +76,6 @@ filetype plugin indent on
 set t_Co=256
 syntax enable
 set background=dark
-"colorscheme Tomorrow-Night-Eighties
-
-let g:molokai_original = 0
 colorscheme molokai
 
 " User Interface
@@ -158,11 +153,8 @@ augroup END
 " Mac Vim
 
 if has('gui_macvim')
-  " MacVim
-
-  " Custom Menlo font for Powerline
-  " From: https://github.com/Lokaltog/vim-powerline/wiki/Patched-fonts
-  set guifont=Menlo\ for\ Powerline:h11
+  " Font for MacVim
+  set guifont=Monaco:h11
 
   " Hide Toolbar in MacVim
   if has("gui_running")
