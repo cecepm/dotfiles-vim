@@ -154,7 +154,8 @@ augroup END
 
 if has('gui_macvim')
   " Font for MacVim
-  set guifont=Monaco:h11
+  set guifont=Monaco\ for\ Powerline:h14
+  let g:airline_powerline_fonts = 1
 
   " Hide Toolbar in MacVim
   if has("gui_running")
