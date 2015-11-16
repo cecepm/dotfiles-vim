@@ -4,63 +4,64 @@ filetype off
 
 
 " Call Vundle for loading/managing other plugins
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 
 " ------------------------------------------------------------------------------
-" Bundles
+" Plugins
 
 " Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Show trailing whitespaces
-Bundle 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Easy tabular formatting
-Bundle 'godlygeek/tabular'
+Plugin 'godlygeek/tabular'
 
 " Syntax and plugin for Nginx
-Bundle 'mutewinter/nginx.vim'
+Plugin 'mutewinter/nginx.vim'
 
 " Syntax and plugin for Bind
-Bundle 'seveas/bind.vim'
+Plugin 'seveas/bind.vim'
 
 " Easy comment/uncomment
-Bundle 'tpope/vim-commentary'
+Plugin 'tpope/vim-commentary'
 
 " Git wrapper for Vim
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " Syntax, indent, and filetype plugin files for git
-Bundle 'tpope/vim-git'
+Plugin 'tpope/vim-git'
 
 " Git-Gutter
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " Syntax and plugin for Markdown
-Bundle 'tpope/vim-markdown'
+Plugin 'tpope/vim-markdown'
 
 " All about surrounding
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " Nice VIM status line
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 
 " Colorschemes
-Bundle 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes'
 
 " Automatic closing of quotes
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 
 " Snippet Engine
-Bundle 'MarcWeber/ultisnips'
+Plugin 'MarcWeber/ultisnips'
 
 " Snippet Collections
-Bundle 'honza/vim-snippets'
+Plugin 'honza/vim-snippets'
 
-" Automatically detect file type
-filetype plugin indent on
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 
 " ------------------------------------------------------------------------------
