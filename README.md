@@ -15,12 +15,12 @@
 3. Install vundle
 
     ```
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     ```
 
 4. Install configured bundle
 
-    Launch `vim`, and run `:BundleInstall` (or `vim +BundleInstall +qall` for CLI lovers)
+    Launch `vim`, and run `:PluginInstall` (or `vim +PluginInstall +qall` for CLI lovers)
 
 ## Screenshot
 
