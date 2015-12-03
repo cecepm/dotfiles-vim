@@ -25,3 +25,12 @@
 ## Screenshot
 
 ![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim.png)
+
+## Notes
+
+For python linter (syntastic plugin), we need to install pyflake. Install it
+using pip.
+
+```
+pip install pyflakes
+```

@@ -44,6 +44,9 @@ Plugin 'tpope/vim-markdown'
 " All about surrounding
 Plugin 'tpope/vim-surround'
 
+" Linter
+Plugin 'scrooloose/syntastic'
+
 " Nice VIM status line
 Plugin 'bling/vim-airline'
 
@@ -127,6 +130,15 @@ set mouse=a             " Mouse in all modes
 
 " ------------------------------------------------------------------------------
 " Plugin configurations
+
+" Syntastic - Python Linter
+
+" Use flake8
+let g:syntastic_python_checkers = ['flake8']
+
+" See the pep8 error code documentation for an explanation of the error codes.
+" http://pep8.readthedocs.org/en/latest/intro.html#error-codes
+let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801"'
 
 " Nginx
 au BufRead,BufNewFile /opt/nginx/conf/* if &ft == '' | setfiletype nginx | endif
