@@ -47,6 +47,9 @@ Plugin 'tpope/vim-surround'
 " Linter
 Plugin 'scrooloose/syntastic'
 
+" Project file browser
+Plugin 'scrooloose/nerdtree'
+
 " Nice VIM status line
 Plugin 'bling/vim-airline'
 
@@ -132,6 +135,11 @@ set mouse=a             " Mouse in all modes
 " Plugin configurations
 
 " Syntastic - Python Linter
+let g:syntastic_error_symbol = "✗"
+let g:syntastic_warning_symbol = "⚠"
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Use flake8
 let g:syntastic_python_checkers = ['flake8']
@@ -140,6 +148,32 @@ let g:syntastic_python_checkers = ['flake8']
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
 let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801"'
 
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeMinimalUI=1
+
+" NERDTres File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('py', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('sh', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+
 " Nginx
 au BufRead,BufNewFile /opt/nginx/conf/* if &ft == '' | setfiletype nginx | endif
 au BufRead,BufNewFile /opt/nginx/conf/sites-available/* set ft=nginx
@@ -147,11 +181,15 @@ au BufRead,BufNewFile /opt/nginx/conf/sites-enabled/* set ft=nginx
 au BufRead,BufNewFile /etc/nginx/sites-available/* set ft=nginx
 au BufRead,BufNewFile /etc/nginx/sites-enabled/* set ft=nginx
 
-" Powerline
+
+" Powerline Status
 set laststatus=2        " Always show status line
 set noshowmode          " Hide the default mode text
                         " (e.g. -- INSERT -- below the statusline)
+
 let g:airline_powerline_fonts = 0
+let g:airline#extensions#hunks#enabled = 0
+
 
 " make Esc happen without waiting for timeoutlen
 " fixes Powerline delay
@@ -167,7 +205,7 @@ augroup END
 
 if has('gui_macvim')
   " Font for MacVim
-  set guifont=Monaco\ for\ Powerline:h14
+  set guifont=Monaco\ for\ Powerline:h11
   let g:airline_powerline_fonts = 1
 
   " Hide Toolbar in MacVim

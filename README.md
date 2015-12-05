@@ -32,5 +32,12 @@ For python linter (syntastic plugin), we need to install pyflake. Install it
 using pip.
 
 ```
+pip install flake8
 pip install pyflakes
+```
+
+or in Ubuntu install via apt-get
+
+```
+sudo apt-get install python-flake8 pyflakes
 ```
