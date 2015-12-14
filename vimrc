@@ -59,11 +59,8 @@ Plugin 'flazz/vim-colorschemes'
 " Automatic closing of quotes
 Plugin 'Raimondi/delimitMate'
 
-" Snippet Engine
-Plugin 'MarcWeber/ultisnips'
-
-" Snippet Collections
-Plugin 'honza/vim-snippets'
+" Code Completion
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -83,7 +80,8 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax enable
 set background=dark
-colorscheme molokai
+colorscheme jellybeans
+
 
 " User Interface
 set number              " Line numbers on
@@ -146,7 +144,7 @@ let g:syntastic_python_checkers = ['flake8']
 
 " See the pep8 error code documentation for an explanation of the error codes.
 " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
-let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801"'
+let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801,W391"'
 
 
 " NERDTree
@@ -205,7 +203,8 @@ augroup END
 
 if has('gui_macvim')
   " Font for MacVim
-  set guifont=Monaco\ for\ Powerline:h11
+  set guifont=Menlo\ Regular\ for\ Powerline:h12
+  set linespace=5
   let g:airline_powerline_fonts = 1
 
   " Hide Toolbar in MacVim
