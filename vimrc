@@ -14,14 +14,32 @@ call vundle#begin()
 " Let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
+" Git-Gutter
+Plugin 'airblade/vim-gitgutter'
+
+" Nice VIM status line
+Plugin 'bling/vim-airline'
+
 " Show trailing whitespaces
 Plugin 'bronson/vim-trailing-whitespace'
+
+" Ansible
+Plugin 'chase/vim-ansible-yaml'
+
+" Colorschemes
+Plugin 'flazz/vim-colorschemes'
 
 " Easy tabular formatting
 Plugin 'godlygeek/tabular'
 
 " Syntax and plugin for Nginx
 Plugin 'mutewinter/nginx.vim'
+
+" Linter
+Plugin 'scrooloose/syntastic'
+
+" Project file browser
+Plugin 'scrooloose/nerdtree'
 
 " Syntax and plugin for Bind
 Plugin 'seveas/bind.vim'
@@ -35,26 +53,11 @@ Plugin 'tpope/vim-fugitive'
 " Syntax, indent, and filetype plugin files for git
 Plugin 'tpope/vim-git'
 
-" Git-Gutter
-Plugin 'airblade/vim-gitgutter'
-
 " Syntax and plugin for Markdown
 Plugin 'tpope/vim-markdown'
 
 " All about surrounding
 Plugin 'tpope/vim-surround'
-
-" Linter
-Plugin 'scrooloose/syntastic'
-
-" Project file browser
-Plugin 'scrooloose/nerdtree'
-
-" Nice VIM status line
-Plugin 'bling/vim-airline'
-
-" Colorschemes
-Plugin 'flazz/vim-colorschemes'
 
 " Automatic closing of quotes
 Plugin 'Raimondi/delimitMate'
