@@ -65,6 +65,9 @@ Plugin 'Raimondi/delimitMate'
 " Code Completion
 Plugin 'Valloric/YouCompleteMe'
 
+" More icons
+Plugin 'ryanoasis/vim-devicons'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -154,6 +157,9 @@ let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801,W3
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 
+" Exit vim if only NERDTree is the only window left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " NERDTres File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
   exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
@@ -162,6 +168,7 @@ endfunction
 
 call NERDTreeHighlightFile('py', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('sh', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
 call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
@@ -169,10 +176,16 @@ call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
 call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('ds_store', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitconfig', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('gitignore', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashrc', 'Gray', 'none', '#686868', '#151515')
+call NERDTreeHighlightFile('bashprofile', 'Gray', 'none', '#686868', '#151515')
 
 
 " Nginx
@@ -188,8 +201,11 @@ set laststatus=2        " Always show status line
 set noshowmode          " Hide the default mode text
                         " (e.g. -- INSERT -- below the statusline)
 
-let g:airline_powerline_fonts = 0
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 let g:airline#extensions#hunks#enabled = 0
+set linespace=0
 
 
 " make Esc happen without waiting for timeoutlen
@@ -200,6 +216,9 @@ augroup FastEscape
   au InsertLeave * set timeoutlen=1000
 augroup END
 
+
+" Change separator
+set fillchars=vert:\ 
 
 " ------------------------------------------------------------------------------
 " Mac Vim
