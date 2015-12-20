@@ -24,7 +24,7 @@ Plugin 'bling/vim-airline'
 Plugin 'bronson/vim-trailing-whitespace'
 
 " Ansible
-Plugin 'chase/vim-ansible-yaml'
+Plugin 'pearofducks/ansible-vim'
 
 " Colorschemes
 Plugin 'flazz/vim-colorschemes'
