@@ -159,6 +159,10 @@ let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801,W3
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 
+" NERDTree folder icons
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
+
 " Exit vim if only NERDTree is the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
