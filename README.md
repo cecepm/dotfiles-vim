@@ -24,7 +24,7 @@
 
 ## Screenshot
 
-![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim.png)
+![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim_20151218.png)
 
 
 ## Fonts
