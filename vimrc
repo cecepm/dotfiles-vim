@@ -62,8 +62,10 @@ Plugin 'tpope/vim-surround'
 " Automatic closing of quotes
 Plugin 'Raimondi/delimitMate'
 
-" Code Completion
-Plugin 'Valloric/YouCompleteMe'
+if v:version > 703
+  " Code Completion
+  Plugin 'Valloric/YouCompleteMe'
+endif
 
 " More icons
 Plugin 'ryanoasis/vim-devicons'
@@ -105,8 +107,8 @@ endif"
 
 " Set highlight at column 81 and 121-999
 if v:version >= 703
-    "let &colorcolumn="81,".join(range(121,999),",")
-    set colorcolumn=81
+  "let &colorcolumn="81,".join(range(121,999),",")
+  set colorcolumn=81
 endif
 
 " Text Formatting
