@@ -101,7 +101,7 @@ set cursorline          " Highlight current line
 set wrap                " Line wrapping on
 set linebreak           " Wrap lines on 'word' boundaries"
 if exists('&breakindent')
-    set breakindent     " Indent wrapped lines up to the same level
+  set breakindent     " Indent wrapped lines up to the same level
 endif"
 
 
@@ -227,8 +227,8 @@ set fillchars=vert:\
 
 if has('gui_macvim')
   " Font for MacVim
-  set guifont=Menlo\ Regular\ for\ Powerline:h12
-  set linespace=5
+  set guifont=Literation\ Mono\ Powerline:h12
+  set linespace=4
   let g:airline_powerline_fonts = 1
 
   " Hide Toolbar in MacVim

@@ -26,6 +26,11 @@
 
 ![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim.png)
 
+
+## Fonts
+
+Get and install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+
 ## Notes
 
 For python linter (syntastic plugin), we need to install pyflake. Install it
