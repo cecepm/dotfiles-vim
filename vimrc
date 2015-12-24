@@ -226,6 +226,7 @@ augroup END
 " Change separator
 set fillchars=vert:\ 
 
+
 " ------------------------------------------------------------------------------
 " Mac Vim
 
