@@ -160,8 +160,8 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
 
 " NERDTree folder icons
-let g:NERDTreeDirArrowExpandable = ''
-let g:NERDTreeDirArrowCollapsible = ''
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 " Exit vim if only NERDTree is the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
