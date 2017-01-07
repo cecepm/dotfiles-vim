@@ -12,19 +12,16 @@
     ln -s ~/.vim/vimrc ~/.vimrc
     ```
 
-3. Install vundle
+3. Install vim plug
 
     ```
-    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
 
 4. Install configured bundle
 
-    Launch `vim`, and run `:PluginInstall` (or `vim +PluginInstall +qall` for CLI lovers)
-
-## Screenshot
-
-![vim](https://raw.githubusercontent.com/cecepm/dotfiles/master/screenshot/vim_20151218.png)
+    Launch `vim`, and run `:PlugInstall`
 
 
 ## Fonts
