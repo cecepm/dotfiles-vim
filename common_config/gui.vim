@@ -3,7 +3,8 @@
 
 " color schemes
   set background=dark
-  colorscheme solarized
+  " colorscheme solarized
+  colorscheme space-vim-dark
 
 " solarized options
   let g:solarized_visibility = "high"
@@ -11,7 +12,7 @@
 
 " for macvim
   if has('gui_macvim')
-    set guifont=Literation\ Mono\ Powerline:h12
+    set guifont=Literation\ Mono\ Powerline:h13
     set linespace=4
 
     " hide toolbar in MacVim

@@ -12,6 +12,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/ruby-matchit'
   Plug 'tpope/vim-abolish'
+  Plug 'tpope/vim-surround'
+
   Plug 'airblade/vim-gitgutter'
   Plug 'altercation/vim-colors-solarized'
   Plug 'bronson/vim-trailing-whitespace'
@@ -24,10 +26,12 @@ call plug#begin('~/.vim/plugged')
 " Vim airline configs
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  let g:airline_theme='hybrid'
   let g:airline_powerline_fonts = 1
   let g:airline_left_sep=''
   let g:airline_right_sep=''
   let g:airline#extensions#hunks#enabled = 0
+  let g:airline#extensions#ale#enabled = 1
 
 
 "Supertab code completion"
@@ -118,26 +122,28 @@ call plug#begin('~/.vim/plugged')
     vmap <C-Down> ]egv
 
 
-" Syntastic for catching syntax errors on save
-  Plug 'scrooloose/syntastic'
-    let g:syntastic_enable_signs=1
-    " let g:syntastic_quiet_messages = {'level': 'warning'}
-    " syntastic is too slow for haml and sass
-    let g:syntastic_check_on_open = 1
-    let g:syntastic_mode_map = { 'mode': 'active',
-                               \ 'passive_filetypes': ['haml','scss','sass'] }
+" " Syntastic for catching syntax errors on save
+"   Plug 'scrooloose/syntastic'
+"     let g:syntastic_enable_signs=1
+"     " let g:syntastic_quiet_messages = {'level': 'warning'}
+"     " syntastic is too slow for haml and sass
+"     let g:syntastic_check_on_open = 1
+"     let g:syntastic_mode_map = { 'mode': 'active',
+"                                \ 'passive_filetypes': ['haml','scss','sass'] }
+"
+"     " Syntastic - Python Linter
+"     let g:syntastic_always_populate_loc_list = 1
+"     let g:syntastic_check_on_wq = 0
+"
+"     " Use flake8
+"     let g:syntastic_python_checkers = ['flake8']
+"
+"     " See the pep8 error code documentation for an explanation of the error codes.
+"     " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
+"     let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801,W391"'
 
-    " Syntastic - Python Linter
-    let g:syntastic_always_populate_loc_list = 1
-    let g:syntastic_check_on_wq = 0
-
-    " Use flake8
-    let g:syntastic_python_checkers = ['flake8']
-
-    " See the pep8 error code documentation for an explanation of the error codes.
-    " http://pep8.readthedocs.org/en/latest/intro.html#error-codes
-    let g:syntastic_python_flake8_args = '--ignore="E501,E701,E126,E127,E128,W801,W391"'
-
+" Asynchronous Lint Engine
+  Plug 'w0rp/ale'
 
 " gundo for awesome undo tree visualization
   Plug 'sjl/gundo.vim'
