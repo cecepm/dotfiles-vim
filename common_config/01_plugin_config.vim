@@ -144,6 +144,8 @@ call plug#begin('~/.vim/plugged')
 
 " Asynchronous Lint Engine
   Plug 'w0rp/ale'
+    let g:ale_linters = {'python': ['flake8']}
+    let g:ale_python_flake8_options = '--ignore="E501,E701,E126,E127,E128,W801,W391"'
 
 " gundo for awesome undo tree visualization
   Plug 'sjl/gundo.vim'
