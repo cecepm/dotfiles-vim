@@ -2,9 +2,10 @@
   set encoding=utf-8
 
 " color schemes
-  set background=dark
-  " colorscheme solarized
-  colorscheme space-vim-dark
+" colorscheme solarized
+" colorscheme space-vim-dark
+  colorscheme gruvbox
+  set background=dark termguicolors cursorline
 
 " solarized options
   let g:solarized_visibility = "high"

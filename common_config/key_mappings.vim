@@ -30,6 +30,9 @@
 " map spacebar to clear search highlight
   nnoremap <Leader><space> :noh<cr>
 
+" Map to open fuzzy find (FZF)
+  nnoremap <Leader>t :FZF<cr>
+
 " buffer resizing mappings (shift + arrow key)
   nnoremap <S-Up> <c-w>+
   nnoremap <S-Down> <c-w>-
@@ -48,3 +51,10 @@
 
 " clean up trailing whitespace
   map <Leader>c :StripTrailingWhitespaces<cr>
+
+
+map <F1> :colorscheme gruvbox<CR>
+map <F2> :colorscheme base16-default-dark<CR>
+map <F3> :colorscheme hybrid_reverse<CR>
+map <F4> :colorscheme PaperColor<CR>
+map <F5> :colorscheme spacegray<CR>
