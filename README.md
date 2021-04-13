@@ -28,6 +28,13 @@
 
 Get and install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
 
+One of my favorit fonts:
+
+```
+curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf \
+  --output ~/.fonts/'Sauce Code Pro Nerd Font Complete Mono.ttf'
+```
+
 ## Notes
 
 For python linter (syntastic plugin), we need to install pyflake. Install it
