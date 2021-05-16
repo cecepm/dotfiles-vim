@@ -1,26 +1,19 @@
 " set default encoding
   set encoding=utf-8
+  set termguicolors     " enable true colors support
 
 " color schemes
-" colorscheme solarized
-" colorscheme space-vim-dark
   colorscheme gruvbox
   set background=dark termguicolors cursorline
 
-" solarized options
-  let g:solarized_visibility = "high"
-  let g:solarized_contrast = "high"
-
-" for macvim
-  if has('gui_macvim')
-    set guifont=Literation\ Mono\ Powerline:h13
-    set linespace=4
-
-    " hide toolbar in MacVim
-    if has("gui_running")
-      set guioptions=egmrt
-    endif
-
-    " use option (alt) as meta key.
-    set macmeta
+" transparent background (should be combined with transparent terminal)
+  if has('nvim')
+    hi Normal guibg=none ctermbg=none
+    hi LineNr guibg=none ctermbg=none
+    hi Folded guibg=none ctermbg=none
+    hi NonText guibg=none ctermbg=none
+    hi SpecialKey guibg=none ctermbg=none
+    hi VertSplit guibg=none ctermbg=none
+    hi SignColumn guibg=none ctermbg=none
+    hi EndOfBuffer guibg=none ctermbg=none
   endif
