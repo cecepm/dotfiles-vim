@@ -10,15 +10,12 @@
   set guioptions-=L
 
 " set default font
-  set guifont=SauceCodePro\ Nerd\ Font\ Mono\ 13
   set guifont=JetBrains\ Mono\ Medium\ 13
 
 " initial window size
   set lines=45 columns=120
 
-" pretty but not terminal-compatible color scheme
-  " colorscheme codeschool
-  " colorscheme space-vim-dark
+" retro color scheme
   colorscheme gruvbox
 
 runtime! custom_config/*.gvim
