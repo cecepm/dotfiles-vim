@@ -26,16 +26,28 @@ call plug#begin('~/.vim/plugged')
 " Vim airline configs
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  let g:airline_theme='hybrid'
+
+  let g:airline_theme='gruvbox'
   let g:airline_powerline_fonts = 1
+  " let g:airline_section_b = '%{getcwd()}'                " in section B of the status line display the CWD
   let g:airline_left_sep=''
   let g:airline_right_sep=''
   let g:airline#extensions#hunks#enabled = 0
   let g:airline#extensions#ale#enabled = 1
-  let g:airline#extensions#tabline#enabled = 1
 
-  " Show just the filename
-  let g:airline#extensions#tabline#fnamemod = ':t'
+  " TABLINE:
+  let g:airline#extensions#tabline#enabled = 1           " enable airline tabline
+  let g:airline#extensions#tabline#show_close_button = 0 " remove 'X' at the end of the tabline
+  let g:airline#extensions#tabline#tabs_label = ''       " can put text here like BUFFERS to denote buffers (I clear it so nothing is shown)
+  let g:airline#extensions#tabline#buffers_label = ''    " can put text here like TABS to denote tabs (I clear it so nothing is shown)
+  let g:airline#extensions#tabline#fnamemod = ':t'       " disable file paths in the tab
+  let g:airline#extensions#tabline#show_tab_count = 0    " dont show tab numbers on the right
+  let g:airline#extensions#tabline#show_buffers = 0      " dont show buffers in the tabline
+  let g:airline#extensions#tabline#tab_min_count = 2     " minimum of 2 tabs needed to display the tabline
+  let g:airline#extensions#tabline#show_splits = 0       " disables the buffer name that displays on the right of the tabline
+  let g:airline#extensions#tabline#show_tab_nr = 0       " disable tab numbers
+  let g:airline#extensions#tabline#show_tab_type = 0     " disables the weird ornage arrow on the tabline
+  let g:airline#extensions#tabline#exclude_preview = 1   " disable display preview window buffer in the tabline
 
 
 "Supertab code completion"
@@ -43,15 +55,31 @@ call plug#begin('~/.vim/plugged')
     let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 
-" AG aka The Silver Searcher
-  Plug 'rking/ag.vim'
-    nmap g/ :Ag!<space>
-    nmap g* :Ag! -w <C-R><C-W><space>
-    nmap ga :AgAdd!<space>
-    nmap gn :cnext<CR>
-    nmap gp :cprev<CR>
-    nmap gq :ccl<CR>
-    nmap gl :cwindow<CR>
+" ACK
+  Plug 'mileszs/ack.vim'
+
+    " Use ripgrep for searching ⚡️
+    " Options include:
+    " --vimgrep -> Needed to parse the rg response properly for ack.vim
+    " --type-not sql -> Avoid huge sql file dumps as it slows down the search
+    " --smart-case -> Search case insensitive if all lowercase pattern, Search case sensitively otherwise
+    let g:ackprg = 'rg --vimgrep --type-not sql --smart-case'
+
+    " Auto close the Quickfix list after pressing '<enter>' on a list item
+    let g:ack_autoclose = 1
+
+    " Any empty ack search will search for the work the cursor is on
+    let g:ack_use_cword_for_empty_search = 1
+
+    " Don't jump to first match
+    cnoreabbrev Ack Ack!
+
+    " Maps <leader>/ so we're ready to type the search keyword
+    nnoremap <Leader>/ :Ack!<Space>
+
+    " Navigate quickfix list with ease
+    nnoremap <silent> [q :cprevious<CR>
+    nnoremap <silent> ]q :cnext<CR>
 
 
 " Markdown syntax highlighting
@@ -131,7 +159,13 @@ call plug#begin('~/.vim/plugged')
 " FZF
   let g:fzf_install = 'yes | ./install'
   Plug 'junegunn/fzf', { 'do': g:fzf_install }
-    let g:fzf_launcher = "in_new_term %s"
+  Plug 'junegunn/fzf.vim'
+
+  let g:fzf_layout = { 'down': '~40%' }
+  nnoremap <Leader>t : Files<cr>
+
+" vim-grepper
+  Plug 'mhinz/vim-grepper'
 
 
 call plug#end()
