@@ -26,13 +26,12 @@
 
 ## Fonts
 
-Get and install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
-
-One of my favorit fonts:
+Install JetBrains Mono Fonts
 
 ```
-curl -L https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf \
-  --output ~/.fonts/'Sauce Code Pro Nerd Font Complete Mono.ttf'
+mkdir -p ~/Downloads/JetBrainsMono-2.225
+curl -sL https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip -o ~/Downloads/JetBrainsMono-2.225.zip
+unzip ~/Downloads/JetBrainsMono-2.225.zip -d ~/Downloads/JetBrainsMono-2.225
 ```
 
 ## Notes
