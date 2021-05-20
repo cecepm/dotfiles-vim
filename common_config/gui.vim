@@ -3,6 +3,7 @@
   set termguicolors     " enable true colors support
 
 " color schemes
+  let g:gruvbox_contrast_dark = 'hard'
   colorscheme gruvbox
   set background=dark termguicolors cursorline
 

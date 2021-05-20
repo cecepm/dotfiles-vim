@@ -19,7 +19,6 @@
   nnoremap Y y$
 
 " copy any selected text with pressing y
-  xnoremap <Leader>c "+y
   xnoremap <Leader>y "+y
 
 " select the lines which were just pasted
@@ -63,7 +62,7 @@
   nnoremap <silent> <leader>cc :call g:ToggleColorColumn()<cr>
 
 " clean up trailing whitespace
-" map <Leader>c :StripTrailingWhitespaces<cr>
+  map <Leader>c :StripTrailingWhitespaces<cr>
 
 " mhinz/vim-grepper
   let g:grepper={}
