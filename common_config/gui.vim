@@ -9,7 +9,9 @@
 
 " macvim
   if has('gui_macvim')
-    set guifont=JetBrains\ Mono\ NL\ Medium:h15
+    " download from this repo:
+    " https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/JetBrainsMono/
+    set guifont=JetBrainsMonoNL\ Nerd\ Font:h16
 
   " use gui tabs
     set guioptions+=e
