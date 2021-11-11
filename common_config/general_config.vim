@@ -39,7 +39,7 @@
   set ignorecase smartcase
 
 " assume the /g flag on substitutions to replace all matches in a line
-  set gdefault
+  " set gdefault
 
 " set temporary directory (don't litter local dir with swp/tmp files)
   set directory=/tmp/
