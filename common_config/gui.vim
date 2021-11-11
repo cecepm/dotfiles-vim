@@ -7,6 +7,22 @@
   colorscheme gruvbox
   set background=dark termguicolors cursorline
 
+" macvim
+  if has('gui_macvim')
+    set guifont=JetBrains\ Mono\ NL\ Medium:h15
+
+  " use gui tabs
+    set guioptions+=e
+
+  " kill the menubar
+    set guioptions-=T
+    set guioptions-=m
+
+  " kill the scrollbars
+    set guioptions-=r
+    set guioptions-=L
+  endif
+
 " transparent background (should be combined with transparent terminal)
   if has('nvim')
     hi Normal guibg=none ctermbg=none
