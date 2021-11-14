@@ -2,7 +2,10 @@
   nmap <F1> <Nop>
 
 " TAB switcher
-  nnoremap <Tab> gt
+"  nnoremap <Tab> gt
+
+" Open previous buffer
+  nnoremap <Tab> :b#<CR>
 
 " Reload vimrc
   nnoremap gsv :source $MYVIMRC<CR>
@@ -40,3 +43,6 @@
 " NERDTree
   nnoremap <Leader>g :NERDTreeToggle<CR>
   nnoremap <Leader>G :NERDTreeFind<CR>
+
+" Close Buffer using Bclose
+  nnoremap <C-q> :Bclose<CR>

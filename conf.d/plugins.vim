@@ -36,6 +36,9 @@ call plug#begin('~/.vim/plugged')
 " Git Gutter
   Plug 'mhinz/vim-signify'
 
+" Icons
+  Plug 'ryanoasis/vim-devicons'
+
 " Colorscheme
   Plug 'lifepillar/vim-gruvbox8'
   Plug 'NLKNguyen/papercolor-theme'
@@ -43,6 +46,10 @@ call plug#begin('~/.vim/plugged')
 
 " Status line
   Plug 'itchyny/lightline.vim'
+  Plug 'mengelbrecht/lightline-bufferline'
+
+" Close buffer
+  Plug 'chrismccord/bclose.vim'
 
 " Markdown
   Plug 'godlygeek/tabular'

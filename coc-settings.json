@@ -10,5 +10,13 @@
       "initializationOptions": {},
       "settings": {}
     }
+  },
+
+  "explorer.width": 30,
+  "explorer.expandStores": false,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.keyMappings.global": {
+    "<cr>": ["expandable?", "expand", "open"]
   }
 }
