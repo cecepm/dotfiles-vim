@@ -1,51 +1,39 @@
-## Howto Install
+# CoC Installation
 
-1. Clone repository
+## Requirements
 
-    ```
-    git clone https://github.com/cecepm/dotfiles-vim ~/.vim
-    ```
+### Node.js
 
-2. Link vimrc
-
-    ```
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ```
-
-3. Install vim plug
-
-    ```
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    ```
-
-4. Install configured bundle
-
-    Launch `vim`, and run `:PlugInstall`
-
-
-## Fonts
-
-Install JetBrains Mono Fonts
+Install Node.js v12.x on Ubuntu 20.04
 
 ```
-mkdir -p ~/Downloads/JetBrainsMono-2.225
-curl -sL https://download.jetbrains.com/fonts/JetBrainsMono-2.225.zip -o ~/Downloads/JetBrainsMono-2.225.zip
-unzip ~/Downloads/JetBrainsMono-2.225.zip -d ~/Downloads/JetBrainsMono-2.225
+curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash - sudo
+sudo apt install -y nodejs
 ```
 
-## Notes
+### Yarn
 
-For python linter (syntastic plugin), we need to install pyflake. Install it
-using pip.
-
-```
-pip install flake8
-pip install pyflakes
-```
-
-or in Ubuntu install via apt-get
+Install Yarn on Ubuntu 20.04
 
 ```
-sudo apt-get install python-flake8 pyflakes
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install -y yarn
+```
+
+## Install CoC extensions
+
+Install extension using command `CocInstall` inside vim.
+
+```
+CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
+```
+
+## Check
+
+List all installed CoC extensions
+
+```
+CocList extensions
 ```

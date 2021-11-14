@@ -1,11 +1,38 @@
 " required for several plugins
   set nocompatible
 
+" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
+" unicode characters in the file autoload/float.vim
+  set encoding=utf-8
+
+" don't abandon buffers when unloading
+  set hidden
+
+" Some servers have issues with backup files, see #649.
+  set nobackup
+  set nowritebackup
+
+" Give more space for displaying messages.
+  set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+  set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+  set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+  if has("nvim-0.5.0") || has("patch-8.1.1564")
+    " Recently vim can merge signcolumn and number column into one
+    set signcolumn=number
+  else
+    set signcolumn=yes
+  endif
+
 " enable syntax highlighting
   syntax on
-
-" default color scheme
-  set t_Co=256
 
 " don't wrap long lines
   set nowrap
@@ -38,42 +65,20 @@
 " searching is case insensitive when all lowercase
   set ignorecase smartcase
 
-" assume the /g flag on substitutions to replace all matches in a line
-  " set gdefault
-
-" set temporary directory (don't litter local dir with swp/tmp files)
-  set directory=/tmp/
-
 " pick up external file modifications
   set autoread
-
-" don't abandon buffers when unloading
-  set hidden
 
 " match indentation of previous line
   set autoindent
 
-" perform autoindenting based on filetype plugin
-  filetype plugin indent on
-
 " don't blink the cursor
   set guicursor=a:blinkon0
-
-" show current line info (current/total)
-  set ruler rulerformat=%=%l/%L
 
 " show status line
   set laststatus=2
 
-" augment status line
-  function! ETry(function, ...)
-    if exists('*'.a:function)
-      return call(a:function, a:000)
-    else
-      return ''
-    endif
-  endfunction
-  set statusline=[%n]\ %<%.99f\ %h%w%m%r%{ETry('CapsLockStatusline')}%y%{ETry('rails#statusline')}%{ETry('fugitive#statusline')}%#ErrorMsg#%*%=%-16(\ %l,%c-%v\ %)%P
+" show tab line
+  set showtabline=2
 
 " When lines are cropped at the screen bottom, show as much as possible
   set display=lastline
@@ -100,18 +105,3 @@
 
 " allow lots of tabs
   set tabpagemax=20
-
-" remember last position in file
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
-
-" Thorfile, Rakefile, Vagrantfile, and Gemfile are Ruby
-  au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
-
-" JSON is JS
-  au BufNewFile,BufRead *.json set ai filetype=javascript
-
-" *.hh is hack file (php)
-  au BufRead,BufNewFile *.hh set filetype=php
-
-" *.es6 is javascript file
-  au BufRead,BufNewFile *.es6 set filetype=javascript

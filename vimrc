@@ -1,3 +1,7 @@
-runtime! custom_preconfig/*.vim
-runtime! common_config/*.vim
-runtime! custom_config/*.vim
+runtime! conf.d/general-config.vim
+
+runtime! conf.d/plugins.vim
+runtime! plugins-config/*.vim
+
+runtime! conf.d/mappings.vim
+runtime! conf.d/ui.vim
