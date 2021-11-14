@@ -1,8 +1,47 @@
-# CoC Installation
+# Dotfile VIM
+
+My personal vim configuration, always unstable.
 
 ## Requirements
 
-### Node.js
+This vim config required `ripgrep` or `rg` installed. On Ubuntu 20.04 you can install from the repo.
+
+```
+sudo apt install ripgrep
+```
+
+## Installation
+
+1. Clone this repo
+
+   ```
+   git clone https://github.com/cecepm/dotfiles-vim.git ~/.vim
+   ```
+
+2. Create symlink for vimrc
+
+   ```
+   ln -s ~/.vim/vimrc ~/.vimrc
+   ```
+
+3. Install vim plug
+
+   ```
+   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+   ```
+
+4. Install vim plugins, by launching vim, and run this command inside vim.
+
+   ```
+   :PlugInstall
+   ```
+
+## CoC Installation
+
+### Requirements
+
+#### Node.js
 
 Install Node.js v12.x on Ubuntu 20.04
 
@@ -11,7 +50,7 @@ curl -fsSL https://deb.nodesource.com/setup_12.x | sudo -E bash - sudo
 sudo apt install -y nodejs
 ```
 
-### Yarn
+#### Yarn
 
 Install Yarn on Ubuntu 20.04
 
@@ -22,7 +61,7 @@ sudo apt update
 sudo apt install -y yarn
 ```
 
-## Install CoC extensions
+### Install CoC extensions
 
 Install extension using command `CocInstall` inside vim.
 
@@ -30,7 +69,7 @@ Install extension using command `CocInstall` inside vim.
 CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
 ```
 
-## Check
+### Check CoC Installation
 
 List all installed CoC extensions
 
