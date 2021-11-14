@@ -1,6 +1,6 @@
-# Dotfile VIM
+# 🚀🚀🚀 dotfiles-vim 🚀🚀🚀
 
-My personal vim configuration, always unstable.
+My personal vim configuration, always unstable and 🐞 buggy 🐞
 
 ## Requirements
 
