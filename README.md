@@ -34,14 +34,7 @@ sudo apt install xclip
    ln -s ~/.vim/vimrc ~/.vimrc
    ```
 
-3. Install vim plug
-
-   ```
-   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-   ```
-
-4. Install vim plugins, by launching vim, and run this command inside vim.
+3. Install vim plugins, by launching vim, and run this command inside vim.
 
    ```
    :PlugInstall
@@ -76,7 +69,7 @@ sudo apt install -y yarn
 Install extension using command `CocInstall` inside vim.
 
 ```
-:CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
+:CocInstall coc-explorer coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
 ```
 
 ### Check CoC Installation
