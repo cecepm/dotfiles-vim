@@ -72,7 +72,7 @@ sudo apt install -y yarn
 Install extension using command `CocInstall` inside vim.
 
 ```
-CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
+:CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
 ```
 
 ### Check CoC Installation
@@ -80,5 +80,5 @@ CocInstall coc-sh coc-json coc-yaml coc-rust-analyzer coc-pyright
 List all installed CoC extensions
 
 ```
-CocList extensions
+:CocList extensions
 ```
