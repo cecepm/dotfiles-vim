@@ -1,6 +1,9 @@
 " Disable annoying F1
   nmap <F1> <Nop>
 
+" Go to next buffer
+  nnoremap <Tab> :bnext<CR>
+
 " Reload vimrc
   nnoremap gsv :source $MYVIMRC<CR>
 
@@ -32,7 +35,7 @@
   nnoremap <silent> <Space>g :GFiles<CR>
   nnoremap <silent> <Space>C :Commits<CR>
   nnoremap <silent> <Space>c :BCommits<CR>
-  nnoremap <Tab> :Buffer<CR>
+  nnoremap <silent> <Space>b :Buffer<CR>
 
 " NERDTree
   nnoremap <Leader>g :NERDTreeToggle<CR>
