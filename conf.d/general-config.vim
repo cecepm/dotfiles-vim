@@ -12,6 +12,9 @@
   set nobackup
   set nowritebackup
 
+" set temporary directory (don't litter local dir with swp/tmp files)
+  set directory=/tmp/
+
 " Give more space for displaying messages.
   set cmdheight=2
 
