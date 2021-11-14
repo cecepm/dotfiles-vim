@@ -4,17 +4,21 @@ My personal vim configuration, always unstable and 🐞 buggy 🐞
 
 ## Requirements
 
-1. `ripgrep` or `rg` used for recursively search directories for a regex pattern. On Ubuntu 20.04 you can install from the repo.
+#### ripgrep
 
-   ```
-   sudo apt install ripgrep
-   ```
+`ripgrep` or `rg` used for recursively search directories for a regex pattern. On Ubuntu 20.04 you can install from the repo.
 
-2. `xclip` used for copy-paste from vim selection. On Ubuntu 20.04 you can install from the repo.
+ ```
+ sudo apt install ripgrep
+```
 
-   ```
-   sudo apt install xclip
-   ```
+#### xclip (Linux only)
+
+`xclip` used for copy-paste from vim selection. On Ubuntu 20.04 you can install from the repo.
+
+```
+sudo apt install xclip
+```
 
 ## Installation
 
