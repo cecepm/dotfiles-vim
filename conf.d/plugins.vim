@@ -54,7 +54,6 @@ call plug#begin('~/.vim/plugged')
 " Markdown
   Plug 'godlygeek/tabular'
   Plug 'plasticboy/vim-markdown'
-  Plug 'reedes/vim-pencil'
 
 " Distraction free mode
   Plug 'junegunn/goyo.vim'
