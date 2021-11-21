@@ -1,4 +1,4 @@
-  set termguicolors
+" set termguicolors
 
 " tokyonight config
   let g:tokyonight_style = 'night' " available: night, storm
