@@ -19,6 +19,7 @@
   let g:gruvbox_material_transparent_background = 1
 
 " Color Scheme
+  set background=dark
   colorscheme gruvbox-material
 
 " MacVim
