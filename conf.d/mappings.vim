@@ -22,7 +22,7 @@
   vnoremap <C-c> :w !pbcopy<CR><CR>
 
 " Change Color Scheme
-  nmap <F5> :colorscheme gruvbox8_hard<CR>
+  nmap <F5> :colorscheme gruvbox-material<CR>
   nmap <F6> :colorscheme PaperColor<CR>
   nmap <F7> :colorscheme tokyonight<CR>
 

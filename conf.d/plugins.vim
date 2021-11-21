@@ -40,7 +40,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons'
 
 " Colorscheme
-  Plug 'lifepillar/vim-gruvbox8'
+  Plug 'sainnhe/gruvbox-material'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'ghifarit53/tokyonight-vim'
 

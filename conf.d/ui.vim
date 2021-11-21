@@ -2,7 +2,7 @@
 
 " tokyonight config
   let g:tokyonight_style = 'night' " available: night, storm
-  let g:tokyonight_enable_italic = 0
+  let g:tokyonight_enable_italic = 1
   let g:tokyonight_transparent_background = 0
 
 " papercolor config
@@ -14,14 +14,12 @@
     \   }
     \ }
 
-" gruvbox8 config
-  set background=dark
-  let g:gruvbox_italics = 0
-  let g:gruvbox_italicize_strings = 0
-  let g:gruvbox_transp_bg = 1
+" gruvbox material
+  let g:gruvbox_material_background = 'medium'
+  let g:gruvbox_material_transparent_background = 1
 
 " Color Scheme
-  colorscheme gruvbox8_hard
+  colorscheme gruvbox-material
 
 " MacVim
   if has('gui_macvim')

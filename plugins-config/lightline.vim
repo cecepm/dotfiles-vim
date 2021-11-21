@@ -1,7 +1,7 @@
 " taken from:
 " https://github.com/pirey/dotfiles/blob/master/home/.config/nvim/plugin-options/lightline.vim
 let g:lightline = {
-\   'colorscheme': 'deus',
+\   'colorscheme': 'gruvbox_material',
 \   'active': {
 \    'left' :[[ 'mode', 'paste' ],
 \             [ 'readonly', 'filename', 'modified' ]],
