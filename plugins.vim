@@ -44,10 +44,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'ghifarit53/tokyonight-vim'
 
-" UI
-  Plug 'mhinz/vim-startify'
-  Plug 'sainnhe/artify.vim'
-
 " Status line
   Plug 'itchyny/lightline.vim'
   Plug 'mengelbrecht/lightline-bufferline'
