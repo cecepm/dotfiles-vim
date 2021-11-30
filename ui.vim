@@ -1,4 +1,4 @@
-" set termguicolors
+  set termguicolors
 
 " tokyonight config
   let g:tokyonight_style = 'night' " available: night, storm
@@ -9,18 +9,18 @@
   let g:PaperColor_Theme_Options = {
     \   'theme': {
     \     'default.dark': {
-    \       'transparent_background': 1
+    \       'transparent_background': 0
     \     }
     \   }
     \ }
 
 " gruvbox material
-  let g:gruvbox_material_background = 'medium'
-  let g:gruvbox_material_transparent_background = 1
+  let g:gruvbox_material_background = 'hard'
+  let g:gruvbox_material_transparent_background = 0
 
 " Color Scheme
   set background=dark
-  colorscheme gruvbox-material
+  colorscheme PaperColor
 
 " MacVim
   if has('gui_macvim')
