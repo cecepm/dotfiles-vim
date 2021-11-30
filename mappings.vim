@@ -18,8 +18,9 @@
   nmap <C-l> <C-w>l
 
 " Copy paste from vim
-  vnoremap <C-x> :!pbcopy<CR><CR>
-  vnoremap <C-c> :w !pbcopy<CR><CR>
+  " vnoremap <C-x> :!pbcopy<CR><CR>
+  " vnoremap <C-c> :w !pbcopy<CR><CR>
+  vnoremap <C-c> "+y
 
 " Change Color Scheme
   nmap <F5> :colorscheme gruvbox-material<CR>

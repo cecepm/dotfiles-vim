@@ -108,3 +108,10 @@
 
 " allow lots of tabs
   set tabpagemax=20
+
+" clipboard
+  if has('nvim')
+    set clipboard+=unnamedplus
+  else
+    set clipboard=unnamedplus
+  endif
