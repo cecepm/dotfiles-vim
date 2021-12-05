@@ -27,6 +27,9 @@
   nmap <F6> :colorscheme PaperColor<CR>
   nmap <F7> :colorscheme tokyonight<CR>
 
+" Clear highlight
+  nmap <Leader><Space> :noh<CR>
+
 "
 " plugins mappings
 "
