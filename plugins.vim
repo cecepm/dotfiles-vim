@@ -51,6 +51,10 @@ call plug#begin('~/.vim/plugged')
 " Close buffer
   Plug 'chrismccord/bclose.vim'
 
+" Language specific syntax highlighting
+  Plug 'arzg/vim-sh'
+  Plug 'hashivim/vim-terraform'
+
 " Trailing whitespace to be highlighted in red
   Plug 'bronson/vim-trailing-whitespace'
 
