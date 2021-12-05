@@ -40,23 +40,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons'
 
 " Colorscheme
+  Plug 'rakr/vim-one'
   Plug 'sainnhe/gruvbox-material'
   Plug 'NLKNguyen/papercolor-theme'
   Plug 'ghifarit53/tokyonight-vim'
 
 " Status line
-  Plug 'itchyny/lightline.vim'
-  Plug 'mengelbrecht/lightline-bufferline'
+  Plug 'vim-airline/vim-airline'
 
 " Close buffer
   Plug 'chrismccord/bclose.vim'
-
-" Markdown
-  Plug 'godlygeek/tabular'
-  Plug 'plasticboy/vim-markdown'
-
-" Distraction free mode
-  Plug 'junegunn/goyo.vim'
 
 " Trailing whitespace to be highlighted in red
   Plug 'bronson/vim-trailing-whitespace'

@@ -18,9 +18,12 @@
   let g:gruvbox_material_background = 'hard'
   let g:gruvbox_material_transparent_background = 0
 
+" vim-one
+  let g:one_allow_italics = 1
+
 " Color Scheme
   set background=dark
-  colorscheme PaperColor
+  colorscheme one
 
 " MacVim
   if has('gui_macvim')
