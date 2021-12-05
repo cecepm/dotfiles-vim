@@ -8,8 +8,8 @@ My personal vim configuration, always unstable and 🐞 buggy 🐞
 
 `ripgrep` or `rg` used for recursively search directories for a regex pattern. On Ubuntu 20.04 you can install from the repo.
 
- ```
- sudo apt install ripgrep
+```
+sudo apt install ripgrep
 ```
 
 #### xclip (Linux only)
