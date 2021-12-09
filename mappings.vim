@@ -23,16 +23,14 @@
   vnoremap <C-c> "+y
 
 " Change Color Scheme
-  nmap <F5> :colorscheme gruvbox-material<CR>
-  nmap <F6> :colorscheme PaperColor<CR>
-  nmap <F7> :colorscheme tokyonight<CR>
+  nmap <F5> :colorscheme gruvbox<CR>
+  nmap <F6> :colorscheme one<CR>
 
 " Clear highlight
   nmap <Leader><Space> :noh<CR>
 
-"
-" plugins mappings
-"
+
+" --- plugins mappings -------------------------------------------------------
 
 " FZF
   nnoremap <silent> <Space><Space> :Files<CR>

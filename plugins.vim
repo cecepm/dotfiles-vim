@@ -42,9 +42,6 @@ call plug#begin('~/.vim/plugged')
 " Colorscheme
   Plug 'rakr/vim-one'
   Plug 'morhetz/gruvbox'
-  Plug 'sainnhe/gruvbox-material'
-  Plug 'NLKNguyen/papercolor-theme'
-  Plug 'ghifarit53/tokyonight-vim'
 
 " Status line
   Plug 'vim-airline/vim-airline'

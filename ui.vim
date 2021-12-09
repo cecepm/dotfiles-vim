@@ -1,23 +1,5 @@
   set termguicolors
 
-" tokyonight config
-  let g:tokyonight_style = 'night' " available: night, storm
-  let g:tokyonight_enable_italic = 1
-  let g:tokyonight_transparent_background = 0
-
-" papercolor config
-  let g:PaperColor_Theme_Options = {
-    \   'theme': {
-    \     'default.dark': {
-    \       'transparent_background': 0
-    \     }
-    \   }
-    \ }
-
-" gruvbox material
-  let g:gruvbox_material_background = 'hard'
-  let g:gruvbox_material_transparent_background = 0
-
 " vim-one
   let g:one_allow_italics = 1
 
