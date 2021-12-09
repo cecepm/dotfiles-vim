@@ -55,6 +55,7 @@
 
 " enable line numbers, and don't make them any wider than necessary
   set number numberwidth=2
+  set rnu
 
 " show the first match as search strings are typed
   set incsearch
