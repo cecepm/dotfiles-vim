@@ -5,7 +5,8 @@
 
 " Color Scheme
   set background=dark
-  colorscheme gruvbox
+  colorscheme onedark
+  " colorscheme gruvbox
 
 " MacVim
   if has('gui_macvim')

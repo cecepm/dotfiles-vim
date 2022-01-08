@@ -40,6 +40,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ryanoasis/vim-devicons'
 
 " Colorscheme
+  Plug 'joshdick/onedark.vim'
   Plug 'rakr/vim-one'
   Plug 'morhetz/gruvbox'
 
