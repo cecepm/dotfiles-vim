@@ -17,9 +17,6 @@ call plug#begin('~/.vim/plugged')
 " The plugin provides mappings to easily delete, change and add such surroundings in pairs.
   Plug 'tpope/vim-surround'
 
-" This plugin improves the commit buffer.
-  Plug 'rhysd/committia.vim'
-
 " COC
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
